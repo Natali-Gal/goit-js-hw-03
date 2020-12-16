@@ -5,8 +5,9 @@ const countProps = function(obj) {
     for (const key of keys) {
         console.log(key);        
     }
-    console.log(keys.length);
-};
+   
+    return Object.keys(obj).length;
+}; 
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

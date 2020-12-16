@@ -8,13 +8,13 @@ const products = [
 const calculateTotalPrice = function(allProdcuts, productName) {
  // твой код
   let total = 0;
-  for (const product of allProdcuts) {
-      
-      if (product.name === productName) {
-          total =  product.price * product.quantity;
-        }  
+
+  for (const {name, price, quantity} of allProdcuts) {
+      if (name === productName) {
+          return price*quantity;
+        }
     }
-    return total;
+
 };
 
 /*
